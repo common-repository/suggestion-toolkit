@@ -1,0 +1,193 @@
+
+.ps-product-lst{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.ps-product-lst-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: rgba(20,100,70,0.1);
+	min-height: 40px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.ps-product-lst-item-name{
+	width: 70%;
+	align-self: flex-start;
+}
+
+div.ps-product-lst-item-downloads{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	padding: 0;
+}
+
+div.ps-product-lst-item-download{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding: 3px 0;
+}
+
+div.ps-product-lst-item-actions{
+	padding: 0;
+}
+
+div.ps-product-lst-item-download:last-child{
+	border-bottom: none;
+}
+
+button.ps-product-btn{
+	width: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 20px;
+	padding: 0;
+}
+
+div.ps-product-btn-placeholder{
+	width: 240px;
+	background-image: url('../img/checked.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+	height: 50px;
+}
+
+button.ps-product-btn span{
+	text-align: center;
+	width: 210px;
+}
+
+button.ps-product-btn i{
+	visibility: hidden;
+}
+
+button.ps-product-btn.checked{
+	justify-content: space-between;
+}
+
+button.ps-product-btn.checked i{
+	visibility: visible;
+	color: #0FBE7C;
+}
+
+.ps-product-checkout-row{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	min-height: 40px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+button.ps-product-checkout{
+	width: 340px;
+	align-self: flex-end;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 20px;
+}
+
+.ps-product-login-container{
+	display: flex;
+	max-width: 900px;
+	margin-bottom: 10px;
+}
+
+div.ps-product-login{
+	display: flex;
+	flex-direction: row;
+	
+	padding: 10px 30px 10px 10px;
+	width: 100%;
+}
+
+p.ps-product-login-descr{
+	padding: 5px 0;
+	width: 87%;
+}
+
+div.ps-product-login-form, div.ps-product-verify-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.ps-product-login-btn{
+	align-items: center;
+	line-height: 20px;
+}
+
+#ps-product-login-error, #ps-product-verify-error{
+	color: red;
+}
+
+#ps-product-login-form-inputs, #ps-product-verify-form-inputs{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+#ps-product-login-form.hidden{
+	display: none;
+}
+
+#login_email.error{
+	border: 1px solid red;
+}
+
+#ps-product-verify-form.hidden{
+	display: none;
+}
+
+#login_code.error{
+	border: 1px solid red;
+}
+
+#ps-product-verify-form span, #ps-product-verify-form label{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.ps-product-checkout-row.ps-product-checkout{
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.ps-product-checkout-error{
+	color: red;
+	line-height: 32px;
+}
+
+.ps-payment-info{
+    display: flex; 
+    max-width: 900px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ps-payment-info img{
+	max-width: 200px;
+	max-height: 200px;
+}
